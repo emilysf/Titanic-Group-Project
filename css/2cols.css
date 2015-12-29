@@ -1,0 +1,201 @@
+/*  GRID OF TWO   ============================================================================= */
+
+
+
+/* passenger box */
+.span_8_of_2 {
+	width:98%;
+	height: 700px;
+	margin-top:5%;
+	margin-right:6%;
+}
+
+/* D3 info sections */
+.span_7_of_2 {
+ 	width: auto;
+	height: auto;
+	margin:0;
+	margin-top:5%;
+	margin-bottom:2%;
+}
+
+
+/* PASSNGERS --> band names */
+.span_6e_of_2 {
+	width:25%;
+	height:auto;
+	float:right;
+	margin-right:5%;
+	padding:15px;
+	border-top: #900 solid 3px;
+	border-bottom: #900 solid 3px;
+}
+
+
+/* PASSNGERS --> others images */
+.span_6d_of_2 {
+	width:23%;
+	height:550px;
+	margin-top:3%;
+	text-align:center;
+}
+
+/* PASSNGERS --> others box*/
+.span_6c_of_2 {
+	width:95%;
+	height:auto;
+	float:left;
+	margin-right:1%;
+	margin-bottom:1%;
+	margin-top:1%;
+	padding-left:2%;
+}
+
+/* PASSENGERS --> officers pic*/
+.span_6b_of_2 {
+	width:40%;
+	height:auto;
+	float:left;
+	margin-top:10%;
+	margin-left:10%;
+	margin-bottom:1%;
+}
+
+/* PASSNGERS --> officers text box */
+.span_6a_of_2 {
+	width:40%;
+	height:auto;
+	margin-top:5%;
+	margin-left:5%;
+	margin-bottom:2%;
+}
+
+
+
+
+/* ABOUT info background */
+.span_6_of_2 {
+	width:87.7%;
+	height:auto;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.9);
+	padding-left: 4.5%;
+	padding-top:1.7%;
+	padding-right: 4.5%;
+	padding-bottom:3%;
+}
+
+
+/* intro */
+.span_5_of_2 {
+	width: 100%;
+	height: auto;
+	padding-top:1%;
+}
+
+/* Header title */
+.span_4_of_2 {
+	width: 100%;
+	height: auto;
+	border-bottom: solid white thin;
+}
+
+/* navigation blockout */
+.span_3_of_2 {
+	width: 100%;
+	/*border:thin white solid;*/
+}
+
+/* Transparent Background */
+#transbox {
+	width:100%;
+	height:auto;
+	margin-top:6%;
+	padding-bottom:25px;
+    /* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.4);
+	margin-bottom:6%;
+}
+
+
+/* main image slider */
+.span_2_of_2 {
+	width:97.5%;
+	height: auto;
+	margin-bottom:3%;
+}
+
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	
+	h2{
+		margin-right:4%;
+	}
+	
+	
+	.span_8_of_2 {
+		width:98%;
+		margin-bottom:3%;
+	}
+	
+	.span_7_of_2 {
+		margin-right:90%;
+	}
+	
+	.span_6e_of_2 {
+		width: 87%;
+		margin-left:1%; 
+	}
+	
+	.span_6d_of_2 {
+		width: 87%;
+		margin-left:1%; 
+		margin-bottom:-5%;
+	}
+	
+	.span_6c_of_2 {
+		width: 87%;
+		margin-left:1%; 
+	}
+	
+	.span_6b_of_2 {
+		width: 87%;
+		margin-left:1%; 
+	}
+	
+	.span_6a_of_2 {
+		width: 87%;
+		margin-left:1%; 
+	}
+	
+	.span_6_of_2 {
+		width: 87%;
+		margin-left:1%; 
+	}
+	
+	.span_5_of_2 {
+		width: 100%; 
+	}
+	
+	.span_4_of_2 {
+		width: 100%; 
+	}
+	
+	.span_3_of_2 {
+		width: 100%; 
+	}
+	
+	.span_2_of_2 {
+		width: 100%; 
+	}
+	.span_1_of_2 {
+		width: 100%; 
+	}
+}

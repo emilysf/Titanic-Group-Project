@@ -1,0 +1,61 @@
+
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* SURVIVOR JQUERY */
+
+
+#container {
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+ul {
+	padding: 2px;
+	height: auto;
+	width: 970px; /* changes width of top thumbnails */
+}
+
+ul li {
+	display:inline-block;
+	padding-left: 3px;
+}
+
+li:hover{
+	border:thin #555454 solid;
+}
+ 
+
+#content {
+	display: block;
+	height: 600px;
+	width: 360px;
+	padding-left:9%;
+	padding-top:3%;
+	float:left;
+
+}
+
+#title {
+	height: 10px;
+	width: 450px;
+	padding-top:6%;
+	float:left;
+	color:black;
+	font-size:18px;
+	text-align:center;
+}
+
+#text {
+	height: 600px;
+	width: 450px;
+	padding-top:3%;
+	float:left;
+	color:black;
+}
+
+
+/* CSS Document */
+

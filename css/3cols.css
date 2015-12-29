@@ -1,0 +1,84 @@
+/*  GRID OF THREE   ============================================================================= */
+
+/* AFTERMATH VIDEO LEFT*/
+.span_6_of_3 {
+	width:50%;
+	height:auto;
+	float:left;
+	margin-right:6%;
+}
+
+
+/* DECK PLAN TEXT BOTTOM*/
+.span_5c_of_3 {
+	width:95%;
+	height:auto;
+	padding:0px 5px 5px 5px;
+}
+
+/* DECK PLAN TEXT TOP*/
+.span_5b_of_3 {
+	width:47%;
+	height:auto;
+	padding:5px;
+	margin-left:2%;
+	margin-bottom:5%;
+}
+
+/* DECK PLAN */
+.span_5_of_3 {
+	width:auto;
+	height:auto;
+	float:left;
+	padding:5px;
+}
+
+
+/* AFTERMATH --> titanic film poster */
+.span_4_of_3 {
+	width:auto;
+	height:auto;
+	float:right;
+	padding:5px;
+}
+
+.span_3b_of_3  {
+	width: 25%; 
+	border-top:#900 solid 3px; /* better top, or left? */
+	border-bottom:#900 solid 3px;  /* better bottom, or right? */
+	margin-left:6%;
+	padding:8px 0px 0px 8px;
+}
+
+	
+.span_3_of_3 {
+	width: 100%; 
+}
+
+.span_2_of_3 {
+	width: 66.13%; 
+}
+
+.span_1_of_3 {
+	width: 32.26%; 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_4_of_3 {
+		width: 100%;
+		padding-right:0;
+	}
+	
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
+}

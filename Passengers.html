@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>The Passengers</title>
+	<meta name="description" content="This is the Responsive Grid System, a quick, easy and flexible way to create a responsive web site.">
+	<meta name="keywords" content="responsive, grid, system, web design">
+
+	<meta name="author" content="www.grahamrobertsonmiller.co.uk">
+
+	<meta http-equiv="cleartype" content="on">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
+    
+    <link rel="stylesheet" href="css/styles.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/2cols.css" media="all">
+	<link rel="stylesheet" href="css/3cols.css" media="all">
+	<link rel="stylesheet" href="css/4cols.css" media="all">
+    <link rel="stylesheet" href="css/5cols.css" media="all">
+
+	<!-- Responsive Stylesheets -->
+	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">
+
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+	<script src="js/modernizr-2.5.3-min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script src="js/d3pie.min.js"></script>
+    
+    
+    
+    <link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
+    <script src="js/gallery.js" type="text/javascript"></script>
+    <!--<link href="themes/1/generic.css" rel="stylesheet" type="text/css" />-->
+    
+    <!-- For Nav -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/nav_style.css" type="text/css" media="screen"/>
+    
+<style>
+span.reference{
+				position:relative;
+				left:10px;
+				bottom:10px;
+				font-size:12px;
+}
+span.reference a{
+				color:#aaa;
+				text-transform:uppercase;
+				text-decoration:none;
+				text-shadow:1px 1px 1px #000;
+				margin-right:30px;
+}
+span.reference a:hover{
+				color:#ddd;
+}
+ul.sdt_menu{
+				margin-top:1px;
+}
+h1.title{
+text-indent:-9000px;
+width:633px;
+height:69px;
+}
+</style>
+    
+  <style type="text/css">
+  
+	  @media only screen and (max-width: 480px) {
+	  
+		  h1{
+		  font-size: 5em; }
+		  
+		  h2{
+		  font-size:2.2em; 
+		  margin-top:5%;
+		  }
+		  
+		  h3{
+		  font-size:1em 
+		  }
+	  
+	  }
+  
+  </style>  
+
+</head>
+
+<body>
+
+
+<div id="wrapper">
+	<div id="headcontainer">
+		<header>
+         <div class="section group">
+              <div class="col span_4_of_2">
+                 <h1>TITANIC</h1>
+              </div>
+         </div>
+		</header>
+	</div>
+    
+	<div id="maincontentcontainer">
+		<div class="maincontent">
+            <div id="transbox"> 
+            
+            <div class="content"><center>
+			<h1 class="title">The Titanic</h1>
+			<ul id="sdt_menu" class="sdt_menu">
+				<li>
+					<a href="index.html">
+						<img src="img/titanic.jpeg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">The Titanic</span>
+							<span class="sdt_descr">Home</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="History.html">
+						<img src="img/newspaper.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">History</span>
+							<span class="sdt_descr">Timeline <br /> Destination</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="Passengers.html">
+						<img src="img/passengers.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Passengers</span>
+							<span class="sdt_descr">Who was aboard? <br /> Who survived?</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="Recovery.html">
+						<img src="img/port_bow.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">The Ship</span>
+							<span class="sdt_descr">Deck Plans <br /> Recovery</span>
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="Aftermath.html">
+						<img src="img/titanic_poster.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Aftermath</span>
+							<span class="sdt_descr">1997 Film <br /> Experiences</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+        <div>
+            <span class="reference">
+				
+            </span>
+		</center></div>
+            
+                <div class="section group">
+                     <div class="col span_3_of_2"> </div>
+                     <div class="col span_6_of_2">
+                            
+                       <h2>The Passengers</h2>
+                       <h3> Titanic was built to plough the North Atlantic route from Southampton to New York, a lucrative route for any shipping line because of the volume of passengers involved. She made two stops en route. The first was at the French port of Cherbourg where many American first class passengers were taken on board to travel home after their grand tour of Europe.
+
+The last stop before heading out into the Atlantic and the fate we now know awaited her was at Queenstown, now called Cobh in County Cork, Ireland. Here, hundreds of steerage (third) class passengers boarded Titanic, many having sold everything they owned in order to buy a ticket for a new start. <br><br>
+ The Titanic passenger list ranged from the richest people in the world to the poorest, setting out to make a new life in America. It is perhaps the range of people on board with a wide range of reasons for travel which makes the ship’s story so fascinating.  The class system which existed at the time ensured that these different social classes never met nor mixed while on board, except perhaps during the very last minutes of Titanic’s life. <br><br>
+ 
+ 					 Famous passengers on the Titanic included Molly Brown, wife of a Colorado silver mine entrepreneur, and John Jacob Astor. Molly Brown became famous in her own right for being the only woman to have rowed a lifeboat to safety. <br><br>
+
+Titanic survivor stories have given the world a wealth of information regarding what actually happened during the fateful last minutes of the ill fated luxury liner and the people in the Titanic.    One of the most touching stories regarding the passengers on the Titanic is the tale of an elderly wealthy couple, the Straus'. When it became apparent that no male passengers on the Titanic could be allowed to board the limited lifeboats, Mrs. Straus chose to stay by the side of her husband; even though it meant certain death. The couple perished with the ship. <br><br>
+
+While the world is often taken with the stories of the famous passengers on the Titanic, there were also hundreds of second and third class passengers who also perished with the ship.  </h3>
+                       
+                       <br>
+                       <h2> The Crew and Others of Significance</h2>
+                       <h3> There were over 900 of a crew on board Titanic, ranging from the officers who took command of the various watches or shifts right down to glass washers and galley staff.  In between were engineers, deck staff, pursers, stewards, restaurant staff and postal staff. Just over two hundred crew members survived the Titanic disaster
+                       
+                       <br><br> 
+
+                       <strong>About the Captain...</strong>The maiden voyage of the Titanic was to be 62 year old Captain Smith's last voyage before he retired. Smith was married with a young daughter. Very little is known about his actions on the Titanic after the collision - he was last seen on the bridge of the sinking ship. Captain Smith went down with his ship and his body was never recovered.
+                       
+                       <br><br> 
+ 
+                       <strong>And the band played on...</strong> An eight-man band led by violinist Wallace Hartley, demonstrated extreme courage by entertaining passengers as Titanic sank. Their music most likely averted panic and made the passengers feel that things were not as bad as they appeared. <br><br>
+                       
+               <div class="col span_6e_of_2">
+                 <strong>The Band:</strong> <br>
+                 Hartley, Wallace Henry - Band leader<br>
+                 Brailey, Theodore - Pianist<br>
+                 Bricoux, Roger - Cellist<br>
+                 Clarke, J. Fred C. Bass - Violist<br>
+                 Hume, John (Jock) Law - First violinist<br>
+                 Krins, George - Violist<br>
+                 Taylor, Percy, C. - Cellist<br>
+                 Woodward, J. W. Cellist 
+              </div>
+                          
+                       After all, how bad could things be if the band was still playing? Some witnesses stated that the band played until Titanic slipped beneath the waves. Although it has been argued that the steep incline of the deck would have prevented the band from playing until the bitter end, it is clear that they played until it was no longer possible. <br><br>
+    None of the eight musicians were employed by the White Star Line. They all worked for Messers C.W. and F.N. Black of Liverpool, England and were ticketed on Titanic as second class passengers. All eight musicians lost their lives.
+ 
+                </h3>
+                
+                
+                
+                       
+
+         
+                           
+                           <div class="col span_6b_of_2"> 
+                           		<img src="img/officers.jpg"/>
+                             <h3><strong>Back row from Left to Right:</strong> Herbert McElroy, Charles Lightoller, Herbert Pitman, Joseph Boxhall, Harold Lowe <br><strong> Front row from Left to Right:</strong> James Moody, Henry Wilde, Edward Smith, William Murdoch </h3>
+                           </div>
+                           
+                           
+                       <div class="col span_6a_of_2"> 
+                           <h3> <strong>Officers of the Titanic:</strong> <br>  Captain - Edward J Smith (did not survive) <br>
+Chief Officer - Henry F Wilde (did not survive) <br>
+First Officer - William M Murdoch (did not survive) <br>
+Second Officer - Charles Herbert Lightoller (survived)<br>
+Third Officer - Herbert John Pitman (survived)<bR>
+Fourth Officer - Joseph Groves Boxhall (survived)<bR>
+Fith Officer - Harold Godfrey Lowe (survived)<br>
+Sixth Officer - James P Moody (did not survive)<br>
+Chief Purser - Herbert McElroy (did not survive)<br> </h3>
+                           </div>
+                           
+                 
+                   <div class="col span_6c_of_2">  
+                        
+                     <div class="col span_6d_of_2">  
+                        	<img src="img/hichens.jpg" width="95%"/>
+                        		<h3 align="center"> <strong> Quartermaster:<br> Robert Hitchens (survived) </strong> <br>  He was steering Titanic at the time of the accident.</h3>  </div> 
+                        
+                         <div class="col span_6d_of_2">  
+                        	<img src="img/fleet.jpg" width="95%"/>
+                            	 <h3 align="center"> <strong> Lookout:<br> Frederick Fleet (survived) </strong> <br>  He was the first to spot the iceberg. Fleet was in the last half hour of his watch from the crows nest when he saw a massive iceberg no more than 500 yards away. Fleet was saved in lifeboat #6.</h3> </div>
+                        
+                        <div class="col span_6d_of_2">  
+                        	<img src="img/andrews.jpg" width="95%"/>
+                        		<h3 align="center"> <strong> Designer of the Titanic:<br> Thomas Andrews </strong> <br>  Since Andrews helped design Titanic, he undoubtedly knew the most about the Titanic and her construction. He was on the Titanic to observe Titanic's performance and note anything for future design improvements. Andrews went down with the ship.</h3> </div>  
+                        
+                        <div class="col span_6d_of_2">  
+                        	<img src="img/ismay.jpg" width="95%"/>
+                            	<h3 align="center"> <strong> Director of White Star Lines:<br> J Bruce Ismay (survived)</strong> <br>It is believed that Ismay may have influenced Captain Smith to ignore the ice warnings and steam ahead at full speed. Many are convinced that if Ismay had not been aboard, Captain Smith would have been more cautious and taken the ice warnings more seriously. </h3> </div> 
+                                  
+                        </div>  
+                       
+                            
+                            
+                           
+<div class=" col span_7_of_2">
+<h2> Total Deaths of the Titanic</h2> <br><br>
+
+<!-- FIRST CLASS D3 CHART -->
+<div id="pieChart"></div>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "First Class",
+			"color": "#484848",
+			"font": "arial",
+			"fontSize": 22
+		},
+		"subtitle": {
+			"text": "Death Total: 325",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "verdana"
+		},
+		"titleSubtitlePadding": 0
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 11,
+		"font": "open sans",
+		"location": "bottom-center"
+	},
+	"size": {
+		"canvasHeight": 250,
+		"canvasWidth": 350
+	},
+	"data": {
+		"sortOrder": "value-asc",
+		"content": [
+			{
+				"label": "Children",
+				"value": 6,
+				"color": "#6ccda3"
+			},
+			{
+				"label": "Women",
+				"value": 144,
+				"color": "#7e3860"
+			},
+			{
+				"label": "Men",
+				"value": 175,
+				"color": "#38617e"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"format": "label-percentage1",
+			"hideWhenLessThanPercentage": 0,
+			"pieDistance": 8
+		},
+		"inner": {
+			"format": "value"
+		},
+		"mainLabel": {
+			"color": "#555454",
+			"font": "verdana",
+			"fontSize": 12
+		},
+		"percentage": {
+			"color": "#9f9b9b",
+			"font": "verdana",
+			"fontSize": 11,
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#ffffff",
+			"font": "verdana",
+			"fontSize": 10
+		},
+		"lines": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"canvasPadding": {
+			"right": 19
+		}
+	}
+});
+</script>
+
+                            
+
+<!-- SECOND CLASS D3 CHART -->                          
+ <div id="pieChart"></div>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Second Class",
+			"color": "#484848",
+			"font": "arial",
+			"fontSize": 22
+		},
+		"subtitle": {
+			"text": "Death Total: 285",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "verdana"
+		},
+		"titleSubtitlePadding": 0
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 11,
+		"font": "open sans",
+		"location": "bottom-center"
+	},
+	"size": {
+		"canvasHeight": 250,
+		"canvasWidth": 350
+	},
+	"data": {
+		"sortOrder": "value-asc",
+		"content": [
+			{
+				"label": "Children",
+				"value": 24,
+				"color": "#6ccda3"
+			},
+			{
+				"label": "Women",
+				"value": 93,
+				"color": "#7e3860"
+			},
+			{
+				"label": "Men",
+				"value": 168,
+				"color": "#38617e"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"format": "label-percentage1",
+			"hideWhenLessThanPercentage": 0,
+			"pieDistance": 8
+		},
+		"inner": {
+			"format": "value"
+		},
+		"mainLabel": {
+			"color": "#555454",
+			"font": "verdana",
+			"fontSize": 12
+		},
+		"percentage": {
+			"color": "#9f9b9b",
+			"font": "verdana",
+			"fontSize": 11,
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#ffffff",
+			"font": "verdana",
+			"fontSize": 10
+		},
+		"lines": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"canvasPadding": {
+			"right": 19
+		}
+	}
+});
+</script>
+                      
+
+<!-- THIRD CLASS D3 CHART -->                     
+<div id="pieChart"></div>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Third Class",
+			"color": "#484848",
+			"font": "arial",
+			"fontSize": 22
+		},
+		"subtitle": {
+			"text": "Death Total: 706",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "verdana"
+		},
+		"titleSubtitlePadding": 0
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 11,
+		"font": "open sans",
+		"location": "bottom-center"
+	},
+	"size": {
+		"canvasHeight": 250,
+		"canvasWidth": 350
+	},
+	"data": {
+		"sortOrder": "value-asc",
+		"content": [
+			{
+				"label": "Children",
+				"value": 79,
+				"color": "#6ccda3"
+			},
+			{
+				"label": "Women",
+				"value": 165,
+				"color": "#7e3860"
+			},
+			{
+				"label": "Men",
+				"value": 462,
+				"color": "#38617e"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"format": "label-percentage1",
+			"hideWhenLessThanPercentage": 0,
+			"pieDistance": 8
+		},
+		"inner": {
+			"format": "value"
+		},
+		"mainLabel": {
+			"color": "#555454",
+			"font": "verdana",
+			"fontSize": 12
+		},
+		"percentage": {
+			"color": "#9f9b9b",
+			"font": "verdana",
+			"fontSize": 11,
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#ffffff",
+			"font": "verdana",
+			"fontSize": 10
+		},
+		"lines": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"canvasPadding": {
+			"right": 19
+		}
+	}
+});
+</script>     
+
+
+<!-- CREW MEMEBERS D3 CHART -->
+<div id="pieChart"></div>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Crew Members",
+			"color": "#484848",
+			"font": "arial",
+			"fontSize": 22
+		},
+		"subtitle": {
+			"text": "Death Total: 908",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "verdana"
+		},
+		"titleSubtitlePadding": 0
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 11,
+		"font": "open sans",
+		"location": "bottom-center"
+	},
+	"size": {
+		"canvasHeight": 250,
+		"canvasWidth": 350
+	},
+	"data": {
+		"sortOrder": "value-asc",
+		"content": [
+			{
+				"label": "Children",
+				"value": 0,
+				"color": "#6ccda3"
+			},
+			{
+				"label": "Women",
+				"value": 23,
+				"color": "#7e3860"
+			},
+			{
+				"label": "Men",
+				"value": 885,
+				"color": "#38617e"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"format": "label-percentage1",
+			"hideWhenLessThanPercentage": 0,
+			"pieDistance": 8
+		},
+		"inner": {
+			"format": "value"
+		},
+		"mainLabel": {
+			"color": "#555454",
+			"font": "verdana",
+			"fontSize": 12
+		},
+		"percentage": {
+			"color": "#9f9b9b",
+			"font": "verdana",
+			"fontSize": 11,
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#ffffff",
+			"font": "verdana",
+			"fontSize": 10
+		},
+		"lines": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"canvasPadding": {
+			"right": 19
+		}
+	}
+});
+</script>
+
+
+<!-- Total People on Titanic D3 CHART -->
+<div id="pieChart"></div>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Total Casualties",
+			"color": "#484848",
+			"font": "arial",
+			"fontSize": 22
+		},
+		"subtitle": {
+			"text": "Death Total: 2224",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "verdana"
+		},
+		"titleSubtitlePadding": 0
+	},
+	"footer": {
+		"color": "#999999",
+		"fontSize": 11,
+		"font": "open sans",
+		"location": "bottom-center"
+	},
+	"size": {
+		"canvasHeight": 250,
+		"canvasWidth": 350
+	},
+	"data": {
+		"sortOrder": "value-asc",
+		"content": [
+			{
+				"label": "Children",
+				"value": 109,
+				"color": "#6ccda3"
+			},
+			{
+				"label": "Women",
+				"value": 425,
+				"color": "#7e3860"
+			},
+			{
+				"label": "Men",
+				"value": 1690,
+				"color": "#38617e"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"format": "label-percentage1",
+			"hideWhenLessThanPercentage": 0,
+			"pieDistance": 8
+		},
+		"inner": {
+			"format": "value"
+		},
+		"mainLabel": {
+			"color": "#555454",
+			"font": "verdana",
+			"fontSize": 12
+		},
+		"percentage": {
+			"color": "#9f9b9b",
+			"font": "verdana",
+			"fontSize": 11,
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#ffffff",
+			"font": "verdana",
+			"fontSize": 10
+		},
+		"lines": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "linear",
+			"speed": 400,
+			"size": 8
+		}
+	},
+	"misc": {
+		"canvasPadding": {
+			"right": 19
+		}
+	}
+});
+</script>
+</div>
+
+
+            
+        <div class="col span_8_of_2">
+        
+        	<h2>Survivor Stories - Choose Any Photo Below </h2>
+        
+        <div id="container">
+			<ul>
+				<li><a id="img1" href="#"><img src="img/survivor/hart_tn.jpg"/></a></li>
+				<li><a id="img2" href="#"><img src="img/survivor/collyer_tn.jpg"/></a></li>
+				<li><a id="img4" href="#"><img src="img/survivor/thayer_tn.jpg"/></a></li>
+				<li><a id="img3" href="#"><img src="img/survivor/shutes_tn.jpg"/></a></li>
+				<li><a id="img5" href="#"><img src="img/survivor/dean_tn.jpg"/></a></li>
+                <li><a id="img6" href="#"><img src="img/survivor/asplund_tn.jpg"/></a></li>
+				
+			</ul>
+			<div id="content">
+			</div>
+            
+            <div id="title">
+            	<p id="select"> </p>
+            </div>
+
+			<div id="text">
+				<p id="select"></p>
+			</div>	
+		</div>
+        
+        
+        
+        
+        
+            
+        </div>
+
+
+
+		
+                                                  
+                  	 </div>   
+                 </div>
+            </div>
+        </div>
+    </div>                       
+
+                        
+    
+    
+    
+	<div id="footercontainer">
+		<footer class="group">
+			<div class="col span_3_of_3">
+            	<p align="center"> created by:<br> Jackeline Baez | Emily Frazin | Jennifer Bischoff </p>
+            </div>
+</body>
+</html>
